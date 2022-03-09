@@ -1,0 +1,8 @@
+certificate:
+  name: "cert-manager-certificate"
+  namespace: "cert-manager"
+  secretName: "certificate-secret"
+  clusterIssuerRefName: ""
+  dnsNames:
+    - "*"
+

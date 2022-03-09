@@ -1,0 +1,17 @@
+clusterIssuer:
+  name: "cert-manager-cluster-issuer"
+  namespace: "cluster-manager"
+  acme:
+    server: "https://acme-staging-v02.api.letsencrypt.org/directory"
+    email: "11"
+    privateKeySecretRefName: "cluster-issuer-secret"
+  selector:
+    dnsZones: ["*"]
+    route53:
+      region: "us-east-1"
+      hostedZoneID: "11"
+      accessKeyID: ""
+      secretAccessKeySecretRefName: ""
+      secretAccessKeySecretRefValue: ""
+      iamRole: ""
+
