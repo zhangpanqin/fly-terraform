@@ -1,3 +1,19 @@
+### Terraform login
+
+创建了 `.envrc` 文件，其中定义了项目token 从哪里去
+
+```text
+export TF_CLI_CONFIG_FILE="$HOME/.terraformrc-mflyyou"
+```
+
+在 `$HOME/.terraformrc-mflyyou` 写入 terraform token 信息
+
+```text
+credentials "app.terraform.io" {
+token = ""
+}
+```
+
 ### Debug terraform
 
 ```shell
